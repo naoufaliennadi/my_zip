@@ -5,3 +5,4 @@ test.out: test.py
 clean:
 	rm -f test.out
 test: test.out
+all: clean test
