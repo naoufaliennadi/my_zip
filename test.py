@@ -17,9 +17,9 @@ class test_my_zip(TestCase):
         self.assertEqual(list(my_zip([2, 3, 4], [5, 6, 7])), [(2, 5), (3, 6), (4, 7)])
 
     def test_three(self):
-        self.assertEqual(1,1)
-        self.assertEqual(1,1)
+        self.assertEqual(list(my_zip([1,2,3],[4,5,6],[7,8,9])), [(1, 4, 7), (2, 5, 8), (3, 6, 9)])
+        self.assertEqual(list(my_zip([1],[2],[3])),[(1, 2, 3)])
 
 
 if __name__ == "__main__":
-    x = main()
+    main()
